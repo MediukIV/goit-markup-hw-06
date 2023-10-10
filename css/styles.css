@@ -31,7 +31,7 @@ display: block;
 
 .container { 
 width: 1158px;
-padding: 0 15px;   
+/* padding: 0 15px;    */
 margin: 0 auto;  
 }
 
@@ -214,8 +214,10 @@ background-color: #404BBF;
 /* Section2 */
 
 .section_two{
-padding-top: 120px;
-padding-bottom: 120px; 
+/* padding-top: 120px;
+padding-bottom: 120px;  */
+padding-top: 96px;
+padding-bottom: 96px; 
 }
 
 .visually-hidden {
@@ -234,10 +236,15 @@ overflow: hidden;
 .section_two-menu{
 display: flex;
 gap: 24px;
+flex-wrap: wrap;
 }
 
 .section_two-menu-item{
-width: calc((100% - 24px*3) / 4);
+width: 100%;
+}
+
+.section_two-menu-item:not(:last-child){
+margin-bottom: 72px;
 }
 
 .section_two-menu-box{
@@ -264,6 +271,7 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+text-align: center;
 margin-bottom: 8px;
 }
  
@@ -850,4 +858,77 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-btn_two:focus {
 background-color: #404BBF;
 }
-    
+
+@media screen and (min-width: 320px) {
+   /* Section2 */
+
+   .container { 
+    max-width: 288px; 
+    }
+
+    .section_two-menu-title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    }
+
+    .section_two-menu-text{
+    font-weight: 500;
+    }
+}
+  
+@media screen and (min-width: 768px) {
+   /* Section2 */
+
+   .container { 
+    max-width: 736px; 
+    }
+
+   .section_two-menu{
+   gap: 72px 24px;
+   } 
+
+   .section_two-menu-item{
+    width: calc((100% - 24px) / 2);
+    }
+
+    .section_two-menu-item:not(:last-child){
+    margin: 0;
+    }
+
+    .section_two-menu-title{
+    text-align:unset;
+    }
+   
+}
+
+@media screen and (min-width: 1158px) {
+   /* Section2 */
+
+   .container { 
+    max-width: 1158px;
+    }
+  
+   .section_two{
+    padding-top: 120px;
+    padding-bottom: 120px; 
+    }
+
+    .section_two-menu-item{
+    width: calc((100% - 72px) / 4);
+    }
+
+   .section_two-menu-box {
+    height: 112px;
+    width: 264px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
