@@ -1011,9 +1011,16 @@ background-color: #404BBF;
     width: calc((100% - 72px) / 4);
     }
 
-
     /* Section3 */
-    .section_three-menu-item{
+    .section_three{
+    padding: 120px 0;
+    }
+
+    .section_three-menu{
+    flex-wrap: nowrap;
+    }
+
+    .section_three-menu-item {
     width: calc((100% - 24px*3) / 4);
    }
 
