@@ -417,7 +417,7 @@ row-gap: 48px; */
 }
 
 .section_four-menu-item{
-max-width: 288px;
+max-width: 100%;
 /* width: calc((100% - 24px*2) / 3); */
 cursor: pointer;
 transition-property: box-shadow;
@@ -437,6 +437,10 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 .section_four-cover-box{
 position: relative;
 overflow: hidden;
+}
+
+.section_four-picture{
+flex-shrink: 0;
 }
 
 .section_four-cover-img{
@@ -1064,7 +1068,6 @@ max-width: 496px;
     } 
 
     .section_four-menu-item{
-    max-width: 356px;
     width: calc((100% - 24px) / 2);
     }
 
@@ -1134,8 +1137,7 @@ rgba(46, 47, 66, 0.7)
 url(../images/people-office2x.jpg);
 }
 }
-   
-   
+      
     /* Section2 */
 
    .container { 
@@ -1173,7 +1175,6 @@ url(../images/people-office2x.jpg);
     }
 
    .section_four-menu-item{
-    max-width: 360px;
     width: calc((100% - 24px*2) / 3);
    }
 
