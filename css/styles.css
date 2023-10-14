@@ -412,12 +412,13 @@ margin-bottom: 72px;
 .section_four-menu{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 /* column-gap: 24px;
 row-gap: 48px; */
 }
 
 .section_four-menu-item{
-max-width: 100%;
+max-width: 288px;
 /* width: calc((100% - 24px*2) / 3); */
 cursor: pointer;
 transition-property: box-shadow;
@@ -444,6 +445,7 @@ flex-shrink: 0;
 }
 
 .section_four-cover-img{
+max-width: 288px;
 max-height: 280px;
 }
 
@@ -1068,6 +1070,7 @@ max-width: 496px;
     } 
 
     .section_four-menu-item{
+    max-width: 356px;
     width: calc((100% - 24px) / 2);
     }
 
@@ -1076,7 +1079,8 @@ max-width: 496px;
     }
 
     .section_four-cover-img{
-    max-height: 300px;
+        max-width: 356px;
+        max-height: 300px;
     }
 
      /* footer */
@@ -1175,8 +1179,14 @@ url(../images/people-office2x.jpg);
     }
 
    .section_four-menu-item{
+    max-width: 360px;
     width: calc((100% - 24px*2) / 3);
    }
+
+   .section_four-cover-img{
+    max-width: 360px;
+    max-height: 300px;
+    }
 
    /* footer */
    .footer-box_one{
