@@ -368,9 +368,9 @@ padding-bottom: 120px;
 }
 
 .section_two-menu{
-display: flex;
+/* display: flex;
 gap: 24px;
-flex-wrap: wrap;
+flex-wrap: wrap; */
 }
 
 .section_two-menu-item{
@@ -437,7 +437,7 @@ margin-bottom: 72px;
 
 .section_three-menu{
 display: flex;
-gap: 24px;
+justify-content: center;
 flex-wrap: wrap;
 }
 
@@ -824,8 +824,8 @@ pointer-events: auto;
 }
 
 .modal{
-width: 408px;
-min-height: 584px;
+width: 288px;
+min-height: 623px;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 background: #FCFCFC;
@@ -835,7 +835,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 padding: 24px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-padding: 72px 24px 24px 24px;
+padding: 72px 16px 24px 16px;
 }
 
 .modal-btn_one{
@@ -879,7 +879,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text{
-width: 360px;
+width: 256px;
 color: #2E2F42;
 text-align: center;
 font-size: 16px;
@@ -971,6 +971,8 @@ margin-bottom: 24px;
 }
 
 .modal-privacy{
+display: flex;
+align-items: center;
 color:#8E8F99;
 font-size: 12px;
 line-height: 1.17;
@@ -983,8 +985,21 @@ line-height: 1.33;
 text-decoration-line: underline;
 }
 
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
 .check-text-box{
-width: 16px;
+min-width: 16px;
 height: 16px;
 border-radius: 2px;
 border: 1px solid rgba(46, 47, 66, 0.40);
@@ -1035,8 +1050,12 @@ background-color: #404BBF;
 
 .section_one .container{
 min-width: 169px;
-padding: 0 75px;   
 }
+
+.section_one-title{
+max-width: 169px;
+}
+
 
 /* Section2 */
    
@@ -1044,15 +1063,9 @@ padding: 0 75px;
 max-width: 320px; 
 }
 
-/* Section3 */
-   
-.container-section_three{
-padding-right: 28px;
-padding-left: 28px;
-}
 }
 
-@media screen and (min-width: 320px) and (max-width: 1158px){
+@media screen and (min-width: 320px) and (max-width: 1157px){
     
 /* Section2 */
 
@@ -1173,7 +1186,9 @@ max-width: 768px;
 }
 
 .section_two-menu{
+display: flex;
 gap: 72px 24px;
+flex-wrap: wrap;
 } 
 
 .section_two-menu-item{
@@ -1197,7 +1212,6 @@ padding-left: 108px;
    
 .section_three-menu{
 gap: 64px 24px;
-justify-content: center;
 } 
      
 .section_three-menu-item{
@@ -1229,9 +1243,13 @@ max-height: 300px;
 }
 
 /* footer */
-.container-footer{
-padding-right: 164px;
-padding-left: 108px;
+
+.footer .container {
+width: 584px;
+}
+
+.footer-box{
+display: flex;
 }
 
 .footer-box_one{
@@ -1250,11 +1268,24 @@ display: block;
 }
 
 .footer-form-label{
-width: 264px;  
+width: 264px;
 }
 
 .footer-form{
+justify-content:flex-start;
 gap: 24px;
+}
+
+/* Modal */
+
+.modal{
+width: 408px;
+min-height: 584px;
+padding: 72px 24px 24px 24px;
+}
+
+.modal-text{
+width: 100%;   
 }
 }
 
@@ -1306,7 +1337,6 @@ url(../images/people-office2x.jpg);
 
 .container { 
 max-width: 1158px;
-padding: 0 15px; 
 }
   
 .section_two{
@@ -1321,10 +1351,6 @@ width: calc((100% - 72px) / 4);
 /* Section3 */
 .section_three{
 padding: 120px 0;
-}
-
-.section_three-menu{
-flex-wrap: nowrap;
 }
 
 .section_three-menu-item {
@@ -1349,6 +1375,13 @@ max-height: 300px;
 }
 
 /* footer */
+
+.footer .container {
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
 .footer-box_one{
 margin-right: 120px;
 margin-bottom: 0;
