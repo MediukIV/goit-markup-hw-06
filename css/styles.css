@@ -248,6 +248,10 @@ transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.two {
+color: #4D5AE5;
+}
     
 .mob-item-link:hover,
 .mob-item-link:focus {
@@ -1290,6 +1294,10 @@ width: 100%;
 }
 
 @media screen and (min-width: 1158px) {
+
+.container { 
+padding: 0 15px;   
+}
 
 /* header */
 
